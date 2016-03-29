@@ -149,7 +149,7 @@ namespace DataTableStorageSample
         private static async Task AdvancedTableOperationsAsync(CloudTable table)
         {
             // 演示批量更新或者插入的表操作
-            Console.WriteLine("4. Inserting a batch of entities. ");
+            Console.WriteLine("4. 批量插入实体. ");
             await BatchInsertOfCustomerEntitiesAsync(table);
 
             // 在一个区间内查询一定范围的数据
