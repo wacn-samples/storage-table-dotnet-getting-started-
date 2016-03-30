@@ -9,7 +9,7 @@ author: jasonnewyork
 
 演示如何使用Azure表存储执行普通的任务，示例包括创建表、增删改查操作，批量操作和不同的查询技术
 
-注意：这个示例使用.NET 4.5异步编程模型来演示如何使用storage client libraries异步API调用存储服务。 在实际的应用中这种方式可以提高程序的响应速度。调用存储服务只要添加关键字await为前缀即可。如果您还没有Azure订阅，请点击[此处](https://www.azure.cn/pricing/1rmb-trial/)申请免费的订阅账号。
+注意：这个示例使用.NET 4.5异步编程模型来演示如何使用存储客户库的异步API调用存储服务。 在实际的应用中这种方式可以提高程序的响应速度。调用存储服务只要添加关键字await为前缀即可。如果您还没有Azure订阅，请点击[此处](https://www.azure.cn/pricing/1rmb-trial/)申请免费的订阅账号。
 
 ## 运行这个示例
 
@@ -24,7 +24,7 @@ author: jasonnewyork
 使用Azure存储服务来运行这个示例
 
 1. 打来AppConfig文件然后使用第二个连接字符串。
-2. 在Azure门户网站上创建存储账号，然后修改App.Config的存储账号和存储密钥。更多详细内容请阅读：https://www.azure.cn/documentation/articles/storage-dotnet-how-to-use-blobs/
+2. 在Azure门户网站上创建存储账号，然后修改App.Config的存储账号和存储密钥。
 3. 设置断点，使用F10运行该示例。
 
 
