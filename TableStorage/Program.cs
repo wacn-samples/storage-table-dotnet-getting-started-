@@ -28,7 +28,7 @@ namespace DataTableStorageSample
     /// <summary>
     /// Azure 表服务示例 - 演示如何使用Azure表存储执行普通的任务，示例包括创建表、增删改查操作，批量操作和不同的查询技术    
     /// 
-    /// 注意：这个示例使用.NET 4.5异步编程模型来演示如何使用storage client libraries异步API调用存储服务。 在实际的应用中这种方式
+    /// 注意：这个示例使用.NET 4.5异步编程模型来演示如何使用存储客户库的异步API调用存储服务。 在实际的应用中这种方式
     /// 可以提高程序的响应速度。调用存储服务只要添加关键字await为前缀即可。
     /// 
     /// 参考文档: 
@@ -53,7 +53,7 @@ namespace DataTableStorageSample
         // 
         // 使用Azure存储服务来运行这个示例
         //      1. 打来AppConfig文件然后使用第二个连接字符串。
-        //      2. 在Azure门户网站上创建存储账号，然后修改App.Config的存储账号和存储密钥。更多详细内容请阅读：https://www.azure.cn/documentation/articles/storage-dotnet-how-to-use-blobs/
+        //      2. 在Azure门户网站上创建存储账号，然后修改App.Config的存储账号和存储密钥。更多详细内容请阅读：https://www.azure.cn/documentation/articles/storage-dotnet-how-to-use-tables/
         //      3. 设置断点，然后使用F10按钮运行这个示例. 
         // 
         // *************************************************************************************************************************
@@ -72,7 +72,7 @@ namespace DataTableStorageSample
             // 演示高级的功能，例如批量操作和分段多实体查询 
             AdvancedTableOperationsAsync(table).Wait();
 
-            // 当您删除一个表然后创建同名的表时需要几秒的时间 - 所以为了让您快速成功的运行这个示例，我们创建的表没有进行删除。如果您需要删除表请去掉下面代码的注释             
+            // 当您删除一个表然后创建同名的表时需要几秒的时间 - 因此为了快速演练示例示例，我们创建的表没有进行删除。如果您需要删除表请去掉下面代码的注释             
             //DeleteTableAsync(table).Wait();
 
             Console.WriteLine("按任意键退出");
@@ -85,10 +85,10 @@ namespace DataTableStorageSample
         /// <returns>一个CloudTable对象</returns>
         private static async Task<CloudTable> CreateTableAsync()
         {
-            // 通过连接字符串找到存储账号的信息
+            // 通过连接字符串检索存储账号的信息息
             CloudStorageAccount storageAccount = CreateStorageAccountFromConnectionString(CloudConfigurationManager.GetSetting("StorageConnectionString"));
 
-            // 创建一个tableClient莱赫表服务交互
+            // 创建一个tableClient来和表服务交互
             CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
 
             Console.WriteLine("1. 创建一个表");
