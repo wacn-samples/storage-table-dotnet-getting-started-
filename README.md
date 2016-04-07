@@ -25,7 +25,7 @@ author: jasonnewyork
 使用Azure存储服务来运行这个示例
 
 1. 打开app.config文件, 注释掉模拟器的那一部分连接字符串(UseDevelopmentStorage=True) ，然后删掉存储服务的连接字符串的注释 (AccountName=[]...)。
-2. 在Azure门户网站上创建存储账号，然后修改App.Config的 [AccountName]（存储账号）和 [AccountKey]（存储密钥）。更多详细内容请阅读[这篇文章](/documentation/articles/storage-dotnet-how-to-use-blobs)
+2. 在Azure门户网站上创建存储账号，然后修改App.Config的 [AccountName]（存储账号）和 [AccountKey]（存储密钥）。
 3. 设置断点，使用F10运行该示例。
 
 
